@@ -1,0 +1,64 @@
+{
+  "table": [
+    {
+      "id": "1",
+      "Name": "AUTH_MESSAGE",
+      "Memo": "Authorization message/인증 메세지"
+    },
+    {
+      "id": "7",
+      "Name": "USER_TYPE",
+      "Memo": "User type/사용자 구분"
+    },
+    {
+      "id": "11",
+      "Name": "ACCESS_STEP",
+      "Memo": "Configure Access Step/권한 처리 단계 설정"
+    },
+    {
+      "id": "12",
+      "Name": "AUTH_OBJECT",
+      "Memo": "List of authorized table/권한 처리 할 테이블 리스트"
+    },
+    {
+      "id": "17",
+      "Name": "AUTH_SUBJECT",
+      "Memo": "List of authorized user group/권한 처리 할 사용자 단위"
+    },
+    {
+      "id": "22",
+      "Name": "LANGUAGE",
+      "Memo": "Language/언어"
+    },
+    {
+      "id": "25",
+      "Name": "LOCALIZE_TYPE",
+      "Memo": ""
+    },
+    {
+      "id": "31",
+      "Name": "AUTH_ALGORITHM",
+      "Memo": ""
+    },
+    {
+      "id": "34",
+      "Name": "USER_RANK",
+      "Memo": ""
+    },
+    {
+      "id": "56",
+      "Name": "FILE_OBJECT",
+      "Memo": ""
+    },
+    {
+      "id": "59",
+      "Name": "FILE_SUBJECT",
+      "Memo": ""
+    },
+    {
+      "id": "1052",
+      "Name": "CUSTOM_LANG",
+      "Memo": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <script type="text/javascript" src="../Grid/Grid.js"></script>
+    <script>
+        window.onload = function(){
+            var cols = [];
+
+            cols.push(new column("id", "id", "120", false));
+            cols.push(new column("Name", "NameTag", "120", true));
+            cols.push(new column("Memo", "Memotag", "360", true, true));
+            
+            var ly = new layout(cols);
+            var dataurl = "Admin_Code.aspx?type=data";
+            var uploadurl = "Admin_Code.aspx?type=upload";
+            setGrid("testgrid", ly, dataurl, uploadurl);
+
+            var dbl = function (row, col) {
+                console.log("in dbl : " + row.index + ", " + col.name);
+            };
+            
+            grids["testgrid"].setOnDblClick(dbl);
+        };
+
+        var ar = function () {
+            var row = {};
+            row.Name = "Test";
+            row.Memo = "Test Memo";
+            grids["testgrid"].addRow(row);
+        };
+
+        var save = function () {
+            grids["testgrid"].save();
+        };
+    </script>
+</HEAD>
+<BODY>
+    <input type="button" value="addrow" onclick="javascript:ar();" />
+    <input type="button" value="save" onclick="javascript:save();" />
+    <div id="testgrid" style="width:500px; height:500px;">TestGrid</div>
+</BODY>
+</HTML>
